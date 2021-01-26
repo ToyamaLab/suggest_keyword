@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "suggest keyword",
+    "description": "suggest keyword",
+    "version": "1.0",
+    "background" : {
+     "scripts" : ["background.js"]
+   },
+
+    "permissions" : [
+      "contextMenus",
+      "tabs",
+      "contextMenus",
+      "cookies",
+      "<all_urls>",
+      "storage",
+      "http://trezia.db.ics.keio.ac.jp/",
+      "http://*/*",
+      "https://*/*"
+    ],
+    "icons" : {
+      "16" : "icons.png"
+    }
+}
