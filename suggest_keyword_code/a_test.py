@@ -19,10 +19,6 @@ sparql.setQuery("""
     {{
     resource:{0} wikiPageWikiLink:wikiPageWikiLink ?o .
     }}
-    UNION
-    {{
-    resource:{0} wikiPageUsesTemplate:wikiPageUsesTemplate ?o .
-    }}
     }}
 """.format(word))
 
