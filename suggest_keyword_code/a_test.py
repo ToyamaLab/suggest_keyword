@@ -47,3 +47,4 @@ for item in results_6:
                         print(item)
 
 #目的語取得
+#ファイル:Shintarō_Abe_with_his_oldest_son_Hironobu_in_1956.jpg

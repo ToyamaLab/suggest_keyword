@@ -176,7 +176,7 @@ if(isset($word) && isset($word_2)){
 
 echo '<div class="pink">';
 
-echo 'DB内の単語を取得';echo '<br><br>';
+echo '検索ログから推薦';echo '<br><br>';
 
 $suggest_sample_2=array();
 $count_suggest=array();
@@ -237,7 +237,7 @@ for($i=0; $i<($num-1); $i++){
 
 <div class="yellow">
 <?php
-echo '述語取得(完全一致のみ)';
+echo '述語提示法';
 #popup_test_3
 echo '<form action="matome.php" method="post">';
 echo "<input type=\"hidden\" name=\"php\" value='picup'>";
@@ -572,7 +572,7 @@ pg_close($conn);
 
 <div class="green">
 <?php
-echo '目的語取得(完全一致のみ)';echo '<br>';
+echo '目的語提示法';echo '<br>';
 $str = "/home/toyama/yuna/local/python/bin/python3 a_test.py \"" . $word . "\"";
 $re = shell_exec($str);
 $a_popup_output = explode("\n", $re);
@@ -603,7 +603,7 @@ for($i=0 ;$i<10; $i++){
 <div class="blue">
 
 <?php
-echo '部分文字列を取得(正確さ重視)';
+echo 'プライマリキーワードを部分文字列とした単語(正確さ重視)';
 echo '<form action="matome.php" method="post">';
 echo "<input type=\"hidden\" name=\"php\" value='DBpedia'>";
 echo "<input type=\"hidden\" name=\"comma_separated_sample_2\" value=$comma_separated_sample_2>";
@@ -704,7 +704,7 @@ if(isset($category_popup) && isset($word) && $word!=''){
 
 
 <?php
-echo '部分文字列を取得(時間重視)';
+echo 'プライマリキーワードを部分文字列とした単語(時間重視)';
 echo '<form action="matome.php" method="post">';
 echo "<input type=\"hidden\" name=\"php\" value='DBpedia2'>";
 echo "<input type=\"hidden\" name=\"comma_separated_sample_2\" value=$comma_separated_sample_2>";
